@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>North South University :: Teachers</title>
+
+<link href="../css/common.css" rel="stylesheet" type="text/css">
+<link href="../css/pmenu.css" rel="stylesheet" type="text/css">
+<link href="../css/23division.css" rel="stylesheet" type="text/css">
+<link href="../css/comment.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<div class="mainBody">
+	
+	<div id="head_section">
+		<p class="headerTitle"> North South University</p>
+	</div>
+
+
+
+	<div class="container">
+		<div class="row">
+			<div id="primary_menu">
+				<ul>
+				<li><a href="classes.html">Classes</a></li>
+                <li><a href="studentlist.html">Students</a></li>
+				<li><a href="messages.html">Messages</a></li>
+				<li><a href="noticeboard.html">Noticeboard</a></li>
+				<li><a href="account.html">Account</a></li>
+				<li><a href="../index.html">Logout</a></li>
+				</ul>
+			</div>
+		</div>
+
+
+		<div class="row">
+			
+			<div id="sidebar">
+
+				  <div class="gSub">
+					<h3>Overview</h3>
+					<p class="generalSubmenu">
+						<ul>
+							<li>CLick "REPORT" for report</li>
+							<li>Check "NOTICE" for latest addition</li>
+							<li>This is a demo</li>
+						</ul>
+					</p>
+				</div>
+
+				<div class="gSub">
+						<h3>Resources</h3>
+						<p class="generalSubmenu">
+							<ul>
+								<li>CLick "REPORT" for report</li>
+								<li>Check "NOTICE" for latest addition</li>
+								<li>This is a demo</li>
+							</ul>
+						</p>
+				</div>
+				<div class="gSub">
+						<h3>Turn-Ins</h3>
+						<p class="generalSubmenu">
+							<ul>
+								<li>CLick "REPORT" for report</li>
+								<li>Check "NOTICE" for latest addition</li>
+								<li>This is a demo</li>
+							</ul>
+						</p>
+				</div>
+				<div class="gSub">
+						<h3>Gradings</h3>
+						<p class="generalSubmenu">
+							<ul>
+								<li>CLick "REPORT" for report</li>
+								<li>Check "NOTICE" for latest addition</li>
+								<li>This is a demo</li>
+							</ul>
+						</p>
+				</div>
+				<div class="gSub">
+						<h3>Calender</h3>
+						<p class="generalSubmenu">
+							<ul>
+								<li>CLick "REPORT" for report</li>
+								<li>Check "NOTICE" for latest addition</li>
+								<li>This is a demo</li>
+							</ul>
+						</p>
+				</div>
+				<div class="gSub">
+						<h3>Attendence</h3>
+						<p class="generalSubmenu">
+							<ul>
+								<li>CLick "REPORT" for report</li>
+								<li>Check "NOTICE" for latest addition</li>
+								<li>This is a demo</li>
+							</ul>
+						</p>
+				</div>
+
+
+			</div>
+
+
+
+
+			<div id="right_body">
+				
+				<div id="video_player">
+					<h2>Course Title: Database</h2>
+						
+                        
+                        <!-- video capture code -->
+
+
+<video id="basic-stream" class="videostream" style="width:300px; height200px;" autoplay></video>
+<p><button id="capture-button">Start Stream</button> <button id="stop-button">Stop</button></p>
+
+<script>
+function errorCallback(e) {
+  if (e.code == 1) {
+    alert('User denied access to their camera');
+  } else {
+    alert('getUserMedia() not supported in your browser.');
+  }
+
+}
+
+(function() {
+var video = document.querySelector('#basic-stream');
+var button = document.querySelector('#capture-button');
+var localMediaStream = null;
+
+button.addEventListener('click', function(e) {
+  if (navigator.getUserMedia) {
+    navigator.getUserMedia('video', function(stream) {
+      video.src = stream;
+      video.controls = true;
+      localMediaStream = stream;
+    }, errorCallback);
+  } else if (navigator.webkitGetUserMedia) {
+    navigator.webkitGetUserMedia({video: true}, function(stream) {
+      video.src = window.URL.createObjectURL(stream);
+      video.controls = true;
+      localMediaStream = stream;
+    }, errorCallback);
+  } else {
+    errorCallback({target: video});
+  }
+}, false);
+
+document.querySelector('#stop-button').addEventListener('click', function(e) {
+  video.pause();
+  localMediaStream.stop(); // Doesn't do anything in Chrome.
+}, false);
+})();
+
+
+window.isCompatible = function() {
+  
+return !!(navigator.getUserMedia || navigator.webkitGetUserMedia ||
+        navigator.mozGetUserMedia || navigator.msGetUserMedia);
+
+};
+
+if (isCompatible() === false) {
+  document.getElementById('notcompatible').className = '';
+}
+  </script>
+
+
+                        <!-- video capture end --> 
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+				</div>
+
+
+
+
+				<div  id="comments_template">
+
+					<h2 id="comments">Questions From Students: </h2>
+					
+					<ol class="comments">
+						<li>
+							<img src="../images/commenter1.png" />
+							<div class="main_comment">
+								<h4>Student1 asked...</h4>
+									latest comment
+								<span class="arrow"></span>
+							</div>
+						</li>
+				
+						<li>
+							<img src="../images/commenter2.png" />
+							<div class="main_comment">
+								<h4>Student2 asked...</h4>
+									latest comment
+								<span class="arrow"></span>
+							</div>
+						</li>
+				
+
+					</ol>
+				</div>
+		</div>
+	</div>
+		
+	<div class="row">
+		<div id="footer">
+			<p> &copy;All Rights reserved North South University, 2019</p>
+		</div>
+	</div>
+			
+
+
+	</div>
+	
+</div>
+<script src="../js/jquery213.min.js" type="text/javascript" />
+</body>
+</html>

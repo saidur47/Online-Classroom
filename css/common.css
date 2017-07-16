@@ -1,0 +1,91 @@
+@charset "utf-8";
+/* CSS Document */
+/* css */
+
+
+/* reset */
+
+html,body,div,span,object,
+h1,h2,h3,h4,h5,h6,p,blockquote,
+pre,a,address,code,img,
+small,strong,dl,dt,dd,ol,ul,li,
+fieldset,form,label{
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body{
+    line-height: 1.5;
+    font-family:helvetica,arial,sans-serif;
+   
+}
+ol,ul{
+    list-style:none;
+}
+/* */
+body{
+	background:#ecf0f1;
+}
+
+/* */
+
+
+
+.mainBody{
+	width:960px;
+	margin:0 auto;
+	background-color:#FFF;
+}
+
+.container{
+	width:960px;
+	margin:0 auto;
+
+}
+
+.row{
+	width:960px;
+	margin:0 auto;
+	float:left;
+}
+
+
+
+#head_section{
+	background-image:url("../images/blue_header.jpg");
+	background-position: left top;
+	background-repeat: no-repeat;
+	width:960px;
+	height:80px;
+	margin:5px auto;
+	margin-bottom:0px;
+}
+
+
+.headerTitle{
+	line-height:30px;
+	padding-top:30px;
+	padding-left:20px;
+	text-decoration:none;
+	font-size:3em;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-transform:capitalize;
+	color:#FFF;
+	text-align:left;	
+	text-shadow:1px 1px 2px #00F;
+}
+
+
+
+#footer{
+	background-color:#D7D8FF;
+}
+#footer p{
+	width: 400px;
+	margin: 0 auto;
+}

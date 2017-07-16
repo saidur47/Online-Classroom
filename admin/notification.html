@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>North South University :: Admin </title>
+
+
+<link href="../css/common.css" rel="stylesheet" type="text/css">
+<link href="../css/pmenu.css" rel="stylesheet" type="text/css">
+<link href="../css/userlist.css" rel="stylesheet" type="text/css">
+<link href="../css/notification.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+
+<div class="mainBody">
+	
+	<div id="head_section">
+		<p class="headerTitle"> North South University</p>
+	</div>
+
+
+
+	<div class="container">
+		<div class="row">
+			<div id="primary_menu">
+				<ul>
+				<li><abbr title="Manage Users"><a href="userlist.html">User</a></abbr></li>
+				<li><abbr title="View and Create Notification"><a href="notification.html">Notifications</a></abbr></li>
+				<li><abbr title="View and Edit Admin Information"><a href="information.html">Information</a></abbr></li>
+				<li><abbr title="Logout from System"><a href="Login.html">Logout</a></abbr></li>
+
+				</ul>
+			</div>
+		</div>
+
+<div class="row fullRow">
+        <fieldset><legend>Create New Notification</legend>	
+            <table>
+        
+                <tr class="even">
+                    <td class="table_label">Title</td><td><input name="notificationTitle" type="text" size="20" placeholder="Enter The Title"></td>
+                </tr>
+                <tr>
+                    <td class="table_label">Target User:</td><td><select name="targetUsers">
+                    	<option value=""></option>
+                        <option value="Students">Students</option>
+                        <option value="Teachers">Teachers</option>
+                        <option value="All">All</option>
+                    </select></td>
+                </tr>
+                <tr class="even">
+                    <td class="table_label">Notification Text</td><td><textarea name="notificationText" cols="40" rows="10" placeholder="Enter your text Here"></textarea></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td><td><input name="actionSend" type="button" value="Send"></td>
+                </tr>
+                
+            </table>
+        </fieldset>
+	</div>
+
+
+
+	<div class="row fullRow">
+        <fieldset><legend>Previous Notifications</legend>	
+            <table>
+            <thead>
+                    <tr class="head">
+                        <th>SL. No.</th><th>Date</th><th>Notification Title</th>
+                    </tr>
+                </thead>
+                <tr class="even">
+                    <td>1.</td><td>January 18,2018</td><td><a href="#">Notification Title </a></td>
+                </tr>
+                <tr>
+                    <td>2.</td><td>February 18,2018</td><td><a href="#">Notification Title </a></td>
+                </tr>
+                <tr class="even">
+                    <td>3.</td><td>January 29,2018</td><td><a href="#">Notification Title </a></td>
+                </tr>
+                <tr>
+                    <td>4.</td><td>March 15,2018</td><td><a href="#">Notification Title </a></td>
+                </tr>
+                
+            </table>
+        </fieldset>
+	</div>
+
+
+
+
+
+
+
+	<div class="row">
+		<div id="footer">
+			<p> &copy;All Rights reserved North South University, 2019</p>
+		</div>
+	</div>
+
+</div>
+</div>
+
+
+
+
+
+
+</body>
+</html>

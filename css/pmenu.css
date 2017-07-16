@@ -1,0 +1,58 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*primary menu*/
+
+#primary_menu{
+	width:960px;	
+	height:30px;
+	line-height:20px;
+	
+	margin:0px auto;	
+	
+	background:#2980b9;	
+	background:-moz-linear-gradient(top,#2980b9,#3498db);
+	background:-webkit-linear-gradient(top,#2980b9,#3498db);
+	background:-o-linear-gradient(top,#2980b9,#3498db);
+	
+}
+
+
+#primary_menu ul li{
+	float:left;
+	position:relative;
+}
+#primary_menu ul li a{
+	color:#FFF;
+	font-size:15px;
+	text-decoration:none;
+	text-shadow:1px 1px 2px #00F;
+
+	display:block;
+	font-weight:bold;
+	padding: 0 15px;
+	margin:5px 0;
+	border-left:1px solid #2980b9;
+	border-right:1px solid #2980b9;
+}
+#primary_menu ul li:first-child a{
+	border-left:none;
+}
+#primary_menu ul li:last-child a{
+	border-right:none;
+}
+#primary_menu li:hover > a{
+	 color:#E4E4E4;
+}
+/*  end of primary menu */
+
+
+
+
+
+#primary_menu ul li ul{position:absolute;left:-999999px}
+#primary_menu ul li:hover ul{left:0px}
+#primary_menu ul li ul{background:#fff}
+#primary_menu ul li ul li{float:none;width:200px;border-bottom:1px solid}
+#primary_menu ul li ul li a{background:pink;color:#fff;padding:5px 15px}
+#primary_menu ul li ul li a:hover{background:green}

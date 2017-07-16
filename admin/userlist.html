@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>North South University :: Admin </title>
+
+
+<link href="../css/common.css" rel="stylesheet" type="text/css">
+<link href="../css/pmenu.css" rel="stylesheet" type="text/css">
+<link href="../css/userlist.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+
+<div class="mainBody">
+	
+	<div id="head_section">
+		<p class="headerTitle"> North South University</p>
+	</div>
+
+
+
+	<div class="container">
+		<div class="row">
+			<div id="primary_menu">
+				<ul>
+				<li><abbr title="Manage Users"><a href="userlist.html">User</a></abbr></li>
+				<li><abbr title="View and Create Notification">
+                <a href="notification.html">Notifications</a></abbr></li>
+				<li><abbr title="View and Edit Admin Information"><a href="information.html">Information</a></abbr></li>
+				<li><abbr title="Logout from System"><a href="Login.html">Logout</a></abbr></li>
+				</ul>
+			</div>
+		</div>
+
+	<div class="row fullRow">
+        <fieldset><legend>User Activation - Deactivation</legend>	
+            <table>
+                <thead>
+                    <tr class="head">
+                        <th>SL. No.</th><th>Mark</th><th>NSU ID</th><th>Name</th><th>Password Reset Request</th>
+                    </tr>
+                </thead>
+                <tr class="even">
+                    <td>1.</td><td><input name="user_mark" type="checkbox" value=""></td><td>std1310096642</td><td>Md. Saidur Rahman</td><td>No</td>
+                </tr>
+                <tr>
+                    <td>2.</td><td><input name="user_mark" type="checkbox" value=""></td><td>std1310139042</td><td>Nabilah Hossain</td><td>No</td>
+                </tr>
+                <tr class="even">
+                    <td>3.</td><td><input name="user_mark" type="checkbox" value=""></td><td>std1310279542</td><td>Tasnim Taranooom</td><td>Yes</td>
+                </tr>
+            </table>
+            <p>
+            With the marked users
+            <select name="actions">
+                <option value=""></option>
+                <option value="activate">Activate</option>
+                <option value="deactivate">Deactivate</option>
+                <option value="passwordreset">Password Reset</option>
+            </select>
+            <span class="submit"><input name="actionRun"type="button" value="Go!"></span>
+        	</p>
+        </fieldset>
+	</div>
+
+
+
+
+
+
+
+	<div class="row">
+		<div id="footer">
+			<p> &copy;All Rights reserved North South University, 2019</p>
+		</div>
+	</div>
+
+</div>
+</div>
+
+
+
+
+
+
+</body>
+</html>

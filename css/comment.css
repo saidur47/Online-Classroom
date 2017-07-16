@@ -1,0 +1,71 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* comments template */
+#comments_template{
+	margin-top:2em;
+	background:#ededed;
+	
+    border: 1px solid white;
+    border-right: 1px solid #dfdfdf;
+    border-bottom: 1px solid #dfdfdf;
+	
+	clear:both;
+	margin-bottom: 28px;
+	overflow:hidden;
+	padding-right:40px;
+	padding-left:30px;
+	padding-top:30px;
+	
+	-moz-border-radius-topright: 10px;
+	-webkit-border-top-right-radius: 10px;
+	position:relative;
+}
+
+#comments_template input{
+background:white;
+margin-right: 10px;
+}
+
+#comments_template li{
+	clear:left;
+    border-bottom: 1px solid #d3d3d3;
+    border-top: 1px solid white;
+	padding:2em 0; 
+	overflow:hidden;
+}
+
+#comments_template li:first-child{
+border-top:none;
+}
+#comments_template li:last-child{
+border-bottom:none;
+}
+
+#comments_template .avatar{
+ float:left;
+ margin-right:25px;
+ background: #afafaf;
+ border:1px;
+ border-right:none;
+ border-bottom:none;
+ padding:4px;
+}
+
+.main_comment{
+background:white;
+margin-left:133px;
+padding: 15px;
+position: relative;
+}
+
+.main_comment span.arrow{
+width: 0;
+height:0;
+line-height: 0;
+border-bottom: 25px solid #ededed;
+border-right:20px solid white;
+position:absolute;
+top:10px;
+left: -20px;
+}
